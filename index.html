@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magdalena Jakonska</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <!-- Nav bar component -->
+  <nav
+    class="relative px-4 py-4 flex justify-between items-center bg-[#161513]"
+  >
+    <a class="text-3xl font-bold leading-none" href="#">
+      <img
+        class="w-60"
+        src="/Pics/magdalena-jakonska-high-resolution-logo-white-transparent.png"
+      />
+    </a>
+    <div class="lg:hidden">
+      <button class="navbar-burger flex items-center text-white p-3">
+        <svg
+          class="block h-4 w-4 fill-current"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>Mobile menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+      </button>
+    </div>
+    <ul
+      class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6"
+    >
+      <li>
+        <a
+          class="text-lg text-white font-semibold hover:text-orange-400"
+          href="#"
+          >Home</a
+        >
+      </li>
+      <li class="text-white">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          stroke="currentColor"
+          class="w-4 h-4 current-fill"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+          />
+        </svg>
+      </li>
+      <li>
+        <a
+          class="text-lg text-white font-semibold hover:text-orange-400"
+          href="#"
+          >About</a
+        >
+      </li>
+      <li class="text-gray-300">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          stroke="currentColor"
+          class="w-4 h-4 current-fill"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+          />
+        </svg>
+      </li>
+      <li>
+        <a
+          class="text-lg text-white font-semibold hover:text-orange-400"
+          href="#"
+          >GitHub</a
+        >
+      </li>
+      <li class="text-gray-300">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          stroke="currentColor"
+          class="w-4 h-4 current-fill"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+          />
+        </svg>
+      </li>
+      <li>
+        <a
+          class="text-lg text-white font-semibold hover:text-orange-400"
+          href="#"
+          >Work Experience</a
+        >
+      </li>
+    </ul>
+    <a
+      class="hidden lg:inline-block py-2 px-6 bg-gradient-to-tr from-[#FF8660] to-[#8000FF] hover:bg-white text-sm text-white font-bold rounded-xl transition duration-400 mr-20"
+      href="#"
+      >Contact</a
+    >
+  </nav>
+  <div class="navbar-menu relative z-50 hidden">
+    <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+    <nav
+      class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
+    >
+      <div class="flex items-center mb-8">
+        <a class="mr-auto text-3xl font-bold leading-none" href="#">
+          <img
+            class="w-60"
+            src="/Pics/magdalena-jakonska-high-resolution-logo-black-transparent.png"
+          />
+        </a>
+        <button class="navbar-close">
+          <svg
+            class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div>
+        <ul>
+          <li class="mb-1">
+            <a
+              class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-50 hover:text-orange-400 rounded"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li class="mb-1">
+            <a
+              class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-orange-400 rounded"
+              href="#"
+              >About</a
+            >
+          </li>
+          <li class="mb-1">
+            <a
+              class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-orange-400 rounded"
+              href="#"
+              >GitHub</a
+            >
+          </li>
+          <li class="mb-1">
+            <a
+              class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-orange-400 rounded"
+              href="#"
+              >Work Experience</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="mt-auto">
+        <div class="pt-6">
+          <a
+            class="block px-4 py-3 mb-2 leading-loose text-md text-center text-white font-semibold bg-gradient-to-tr from-[#FF8660] to-[#8000FF] rounded-xl"
+            href="#"
+            >Contact</a
+          >
+        </div>
+        <p class="my-4 text-xs text-center text-gray-400">
+          <span>Copyright © 2024</span>
+        </p>
+      </div>
+    </nav>
+  </div>
+  <!-- End of Nav Bar Code -->
+
+  <!-- Start of main body code -->
+  <body class="h-screen">
+    <!-- About ID part of the page -->
+    <div class="flex min-h-screen bg-[#161513]">
+      <div class="mx-auto">
+        <div
+          class="mx-auto mb-[40px] mt-[98px] h-[213px] w-[213px] overflow-hidden rounded-full bg-gradient-to-tr from-[#FF8660] to-[#8000FF]"
+        >
+          <img
+            src="https://ca.slack-edge.com/TDACA4L7R-U06723WS6D9-1d2ac981e8b3-512"
+            alt=""
+          />
+        </div>
+        <h1
+          class="max-w-screen-sm text-center text-[55px] font-extrabold text-white"
+        >
+          Full-stack <br />
+          Junior Developer <br />
+          <span
+            class="text-transparent bg-clip-text bg-gradient-to-tr from-[#FF8660] to-[#8000FF]"
+            >Let's connect!</span
+          >
+        </h1>
+        <p
+          class="mx-auto mt-[40px] mb-[54px] text-[18px] font-light text-[#C5C5C5] text-center max-w-lg"
+        >
+          Hi! My name is Magdalena Jakonska and I have just started my adventure
+          with coding by applying to The Developer Academy boorcamp programme!
+        </p>
+        <div class="text-center">
+          <button
+            class="text-gray-800 inline-block px-[30px] py-[16px] mr-[18px] bg-white rounded-full font-semibold text-[22px] sm: mb-4"
+          >
+            Get In Touch
+          </button>
+
+          <button
+            class="text-white inline-block px-[30px] py-[16px] bg-transparent border-2 rounded-full font-semibold text-[22px] sm: mb-4"
+          >
+            Download CV
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Intro code -->
+
+    <!-- about me -->
+    <section id="about" class="sm:p-10 lg:p-20 bg-gray-50">
+      <div class="container mx-auto">
+        <div class="sm:columns-2">
+          <img
+            class="sm:w-1/2 mb-10 sm:mb-0"
+            src="/Pics/bg-cta.jpg"
+          />
+          <div>
+            <h2 class="text-bold text-2xl mb-3">Full Stack Web Developer</h2>
+            <p class="mb-5 text-sm text-gray-400">Providing web solutions</p>
+            <p class="text-gray-500 text-justify leading-10">
+              Welcome to my web developer portfolio! I am a passionate and
+              skilled web developer dedicated to creating engaging and
+              functional websites. With a strong foundation in front-end and
+              back-end technologies, I bring creativity and technical expertise
+              to every project. In the realm of front-end development, I
+              specialize in crafting responsive and user-friendly interfaces.
+              Proficient in HTML, CSS, and JavaScript, I ensure seamless
+              navigation and a visually appealing user experience. My designs
+              prioritize both aesthetics and accessibility, creating websites
+              that captivate audiences across devices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section id="services" class="sm:p-10 lg:p-20 p-5">
+      <div class="sm:container mx-auto">
+        <h2 class="text-center text-4xl font-bold pt-10 sm:pt-0 pb-10">
+          Services
+        </h2>
+        <div class="sm:grid grid-cols-2">
+          <div
+            class="sm:p-10 p-5 bg-gray-50 sm:me-5 mb-10 rounded-md hover:shadow-md"
+          >
+            <h3 class="text-xl mb-5 font-bold">Web Design</h3>
+            <p class="leading-10 text-gray-500 text-justify">
+              Welcome to my web developer portfolio! I am a passionate and
+              skilled web developer dedicated to creating engaging and
+              functional websites. With a strong foundation in front-end and
+              back-end technologies, I bring creativity and technical expertise
+              to every project. In the realm of front-end development, I
+              specialize in crafting responsive and user-friendly interfaces.
+              Proficient in HTML, CSS, and JavaScript, I ensure seamless
+              navigation and a visually appealing user experience. My designs
+              prioritize both aesthetics and accessibility, creating websites
+              that captivate audiences across devices.
+            </p>
+          </div>
+
+          <div
+            class="sm:p-10 p-5 bg-gray-50 sm:me-5 mb-10 rounded-md hover:shadow-md"
+          >
+            <h3 class="text-xl mb-5 font-bold">Web Development</h3>
+            <p class="leading-10 text-gray-500 text-justify">
+              Welcome to my web developer portfolio! I am a passionate and
+              skilled web developer dedicated to creating engaging and
+              functional websites. With a strong foundation in front-end and
+              back-end technologies, I bring creativity and technical expertise
+              to every project. In the realm of front-end development, I
+              specialize in crafting responsive and user-friendly interfaces.
+              Proficient in HTML, CSS, and JavaScript, I ensure seamless
+              navigation and a visually appealing user experience. My designs
+              prioritize both aesthetics and accessibility, creating websites
+              that captivate audiences across devices.
+            </p>
+          </div>
+
+          <div
+            class="sm:p-10 p-5 bg-gray-50 sm:me-5 mb-10 rounded-md hover:shadow-md"
+          >
+            <h3 class="text-xl mb-5 font-bold">Issue Fixing</h3>
+            <p class="leading-10 text-gray-500 text-justify">
+              Welcome to my web developer portfolio! I am a passionate and
+              skilled web developer dedicated to creating engaging and
+              functional websites. With a strong foundation in front-end and
+              back-end technologies, I bring creativity and technical expertise
+              to every project. In the realm of front-end development, I
+              specialize in crafting responsive and user-friendly interfaces.
+              Proficient in HTML, CSS, and JavaScript, I ensure seamless
+              navigation and a visually appealing user experience. My designs
+              prioritize both aesthetics and accessibility, creating websites
+              that captivate audiences across devices.
+            </p>
+          </div>
+
+          <div
+            class="sm:p-10 p-5 bg-gray-50 sm:me-5 mb-10 rounded-md hover:shadow-md"
+          >
+            <h3 class="text-xl mb-5 font-bold">Issue Fixing</h3>
+            <p class="leading-10 text-gray-500 text-justify">
+              Welcome to my web developer portfolio! I am a passionate and
+              skilled web developer dedicated to creating engaging and
+              functional websites. With a strong foundation in front-end and
+              back-end technologies, I bring creativity and technical expertise
+              to every project. In the realm of front-end development, I
+              specialize in crafting responsive and user-friendly interfaces.
+              Proficient in HTML, CSS, and JavaScript, I ensure seamless
+              navigation and a visually appealing user experience. My designs
+              prioritize both aesthetics and accessibility, creating websites
+              that captivate audiences across devices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio -->
+    <section class="lg:p-20 p-5" id="portfolio">
+      <div class="lg:container mx-auto">
+        <h2 class="text-center text-4xl font-bold pb-10">Portfolio</h2>
+        <div class="lg:columns-4 sm:columns-2">
+          <div
+            class="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md"
+          >
+            <h3 class="text-xl mb-5">TO DO</h3>
+            <img
+              class="rounded-md h-48 max-h-48 w-full"
+              src="/Pics/bg-hero.jpg"
+            />
+          </div>
+
+          <div
+            class="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md"
+          >
+            <h3 class="text-xl mb-5">TO DO</h3>
+            <img
+              class="rounded-md h-48 max-h-48 w-full"
+              src="/Pics/bg-hero.jpg"
+            />
+          </div>
+
+          <div
+            class="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md"
+          >
+            <h3 class="text-xl mb-5">TO DO</h3>
+            <img
+              class="rounded-md h-48 max-h-48 w-full"
+              src="/Pics/bg-hero.jpg"
+            />
+          </div>
+
+          <div
+            class="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md"
+          >
+            <h3 class="text-xl mb-5">TO DO</h3>
+            <img
+              class="rounded-md h-48 max-h-48 w-full"
+              src="/Pics/bg-hero.jpg"
+            />
+          </div>
+
+          <div
+            class="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md"
+          >
+            <h3 class="text-xl mb-5">TO DO</h3>
+            <img
+              class="rounded-md h-48 max-h-48 w-full"
+              src="/Pics/bg-hero.jpg"
+            />
+          </div>
+
+          <div
+            class="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md"
+          >
+            <h3 class="text-xl mb-5">TO DO</h3>
+            <img
+              class="rounded-md h-48 max-h-48 w-full"
+              src="/Pics/bg-hero.jpg"
+            />
+          </div>
+
+          <div
+            class="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md"
+          >
+            <h3 class="text-xl mb-5">TO DO</h3>
+            <img
+              class="rounded-md h-48 max-h-48 w-full"
+              src="/Pics/bg-hero.jpg"
+            />
+          </div>
+
+          <div
+            class="p-5 bg-gray-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md"
+          >
+            <h3 class="text-xl mb-5">Feedback</h3>
+            <img
+              class="rounded-md h-48 max-h-48 w-full"
+              src="/Pics/bg-hero.jpg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section -->
+    <section class="sm:p-20 p-5" id="contact">
+      <div class="sm:container mx-auto">
+        <h2 class="text-center text-4xl font-bold pb-10">Contact</h2>
+        <div class="w-full sm:flex">
+          <div class="sm:w-1/2 w-full">
+            <div class="mb-5">
+              <h3 class="text-xl">Address</h3>
+              <p class="text-gray-500">Sheffield, England</p>
+            </div>
+
+            <div class="mb-5">
+              <h3 class="text-xl">Email</h3>
+              <a
+                class="text-gray-500"
+                href="mailto:magdalena.jakonska@gmail.com"
+                >magdalena.jakonska@gmail.com</a
+              >
+            </div>
+
+            <div class="mb-5">
+              <h3 class="text-xl">Contact Number</h3>
+              <a class="text-gray-500" href="https:wa.me/TO DO">+44772922...</a>
+            </div>
+          </div>
+
+          <div class="sm:w-1/2 w-full bg-gray-50 p-10 rounded-md">
+            <form
+              action="https://www.ratufa.io/c/ld.js?f=qjqzs5bi&n=n1.ratufa.io"
+            >
+              <div class="mt-5 grid grid-cols-1 gap-y-8 sm:grid-cols-6">
+                <div class="sm:col-span-4">
+                  <label
+                    for="username"
+                    class="block text-sm font-medium leading-6 text-gray-900"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    autocomplete="username"
+                    class="block w-full outline-1 border border-1 flex-1 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                    placeholder="Type your name"
+                  />
+                </div>
+              </div>
+
+              <div class="mt-5 grid grid-cols-1 gap-y-8 sm:grid-cols-6">
+                <div class="sm:col-span-4">
+                  <label
+                    for="subject"
+                    class="block text-sm font-medium leading-6 text-gray-900"
+                    >Subject</label
+                  >
+                  <input
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    autocomplete="subject"
+                    class="block w-full outline-1 border border-1 flex-1 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                    placeholder="Type your subject"
+                  />
+                </div>
+              </div>
+
+              <div class="mt-5 grid grid-cols-1 gap-y-8 sm:grid-cols-6">
+                <div class="sm:col-span-4">
+                  <label
+                    for="message"
+                    class="block text-sm font-medium leading-6 text-gray-900"
+                    >Message</label
+                  >
+                  <textarea
+                    name="message"
+                    id="message"
+                    autocomplete="message"
+                    class="block w-full outline-1 border border-1 flex-1 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                    placeholder="Type your message"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="mt-5 grid grid-cols-1 gap-y-8 sm:grid-cols-6">
+                <a
+                  href=""
+                  class="bg-gray-200 mx-auto w-32 text-center rounded-md p-2 border border-1 border-gray-100 hover:bg-white"
+                  >Submit</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#161513] lg:p-20 p-10">
+      <section class="container mx-auto">
+        <div class="sm:grid justify-between sm:grid-cols-2 lg:grid-cols-4">
+          <div class="flex gap-5 flex-col">
+            <img
+              class=""
+              src="/Pics/magdalena-jakonska-high-resolution-logo-white-transparent.png"
+              alt="logo"
+            />
+          </div>
+
+          <div class="mt-10 sm:mt-0">
+            <h3 class="text-xl font-bold"></h3>
+            <p></p>
+          </div>
+
+          <div class="mt-10 sm:mt-0">
+            <h3 class="text-xl font-bold"></h3>
+          </div>
+
+          <div class="mt-10 sm:mt-0">
+            <h3 class="text-xl font-bold text-white mb-2">Quick links</h3>
+            <!-- Github -->
+            <button
+              type="button"
+              data-te-ripple-init
+              data-te-ripple-color="light"
+              class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+              style="background-color: #333"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </button>
+
+            <!-- Google -->
+            <button
+              type="button"
+              data-te-ripple-init
+              data-te-ripple-color="light"
+              class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+              style="background-color: #ea4335"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+
+            <!-- Linkedin -->
+            <button
+              type="button"
+              data-te-ripple-init
+              data-te-ripple-color="light"
+              class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+              style="background-color: #0077b5"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                />
+              </svg>
+            </button>
+
+            <!-- Whatsapp -->
+            <button
+              type="button"
+              data-te-ripple-init
+              data-te-ripple-color="light"
+              class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+              style="background-color: #128c7e"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- End of main body code -->
+  </body>
+
+  <script>
+    // Burger menus script
+    document.addEventListener("DOMContentLoaded", function () {
+      // open
+      const burger = document.querySelectorAll(".navbar-burger");
+      const menu = document.querySelectorAll(".navbar-menu");
+
+      if (burger.length && menu.length) {
+        for (var i = 0; i < burger.length; i++) {
+          burger[i].addEventListener("click", function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle("hidden");
+            }
+          });
+        }
+      }
+
+      // close
+      const close = document.querySelectorAll(".navbar-close");
+      const backdrop = document.querySelectorAll(".navbar-backdrop");
+
+      if (close.length) {
+        for (var i = 0; i < close.length; i++) {
+          close[i].addEventListener("click", function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle("hidden");
+            }
+          });
+        }
+      }
+
+      if (backdrop.length) {
+        for (var i = 0; i < backdrop.length; i++) {
+          backdrop[i].addEventListener("click", function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle("hidden");
+            }
+          });
+        }
+      }
+    });
+  </script>
+  <!-- End of burger menu script -->
+</html>
