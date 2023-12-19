@@ -686,70 +686,71 @@
           </div>
 
           <div class="sm:w-1/2 w-full bg-gray-50 p-10 rounded-md">
-            <form
-              action="https://www.ratufa.io/c/ld.js?f=qjqzs5bi&n=n1.ratufa.io"
-            >
-              <div class="mt-5 grid grid-cols-1 gap-y-8 sm:grid-cols-6">
-                <div class="sm:col-span-4">
-                  <label
-                    for="username"
-                    class="block text-sm font-medium leading-6 text-gray-900"
-                    >Name</label
-                  >
-                  <input
-                    type="text"
-                    name="username"
-                    id="username"
-                    autocomplete="username"
-                    class="block w-full outline-1 border border-2 border-black flex-1 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
-                    placeholder="Type your name"
-                  />
+            <!-- Start of form -->
+            <div class="container">
+              <form
+                target="_blank"
+                action="https://formsubmit.co/1d96fb01d961a8bf4c19a18503a7304f"
+                method="POST"
+              >
+                <div class="form-group">
+                  <div class="form-row">
+                    <label
+                      for="username"
+                      class="block text-sm font-medium leading-6 text-gray-900"
+                      name="name"
+                      >Full Name</label
+                    >
+                    <div class="col">
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control block w-full outline-1 border-2 border-black flex-1 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                        placeholder="Full Name"
+                        required
+                      />
+                    </div>
+                    <label
+                      for="email"
+                      name="email"
+                      class="block text-sm font-medium leading-6 text-gray-900"
+                      >Your Email Address</label
+                    >
+                    <div class="col">
+                      <input
+                        type="email"
+                        name="email"
+                        class="form-control block w-full outline-1 border-2 border-black flex-1 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                        placeholder="Email Address"
+                        required
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
-
-              <div class="mt-5 grid grid-cols-1 gap-y-8 sm:grid-cols-6">
-                <div class="sm:col-span-4">
-                  <label
-                    for="subject"
-                    class="block text-sm font-medium leading-6 text-gray-900"
-                    >Subject</label
-                  >
-                  <input
-                    type="text"
-                    name="subject"
-                    id="subject"
-                    autocomplete="subject"
-                    class="block w-full outline-1 border border border-2 border-black flex-1 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
-                    placeholder="Type your subject"
-                  />
-                </div>
-              </div>
-
-              <div class="mt-5 grid grid-cols-1 gap-y-8 sm:grid-cols-6">
-                <div class="sm:col-span-4">
+                <div class="form-group">
                   <label
                     for="message"
                     class="block text-sm font-medium leading-6 text-gray-900"
                     >Message</label
                   >
                   <textarea
+                    placeholder="Your Message"
+                    class="form-control block w-full outline-1 border-2 border-black flex-1 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-"
                     name="message"
-                    id="message"
-                    autocomplete="message"
-                    class="block w-full outline-1 border-2 border-black flex-1 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
-                    placeholder="Type your message"
+                    rows="10"
+                    required
                   ></textarea>
                 </div>
-              </div>
-
-              <div class="mt-5 grid grid-cols-1 gap-y-8 sm:grid-cols-6">
-                <a
-                  href=""
-                  class="bg-gradient-to-tr from-[#FF8660] to-[#8000FF] mx-auto w-32 text-center font-bold text-white rounded-md p-2 border border-1 border-black hover:bg-white"
-                  >Submit</a
+                <button
+                  type="submit"
+                  class="mt-5 bg-gradient-to-tr from-[#FF8660] to-[#8000FF] mx-auto w-32 text-center font-bold text-white rounded-md p-2 border border-1 border-black hover:bg-white"
                 >
-              </div>
-            </form>
+                  Submit Form
+                </button>
+              </form>
+            </div>
+
+            <!-- End of Form -->
           </div>
         </div>
       </div>
