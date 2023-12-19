@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Magdalena Jakonska</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer utilities {
+        body {
+          font-family: "Raleway", sans-serif;
+        }
+      }
+    </style>
   </head>
   <!-- Nav bar component -->
   <nav
@@ -110,7 +123,7 @@
     </ul>
     <a
       class="hidden lg:inline-block py-2 px-6 bg-gradient-to-tr from-[#FF8660] to-[#8000FF] hover:bg-white text-sm text-white font-bold rounded-xl transition duration-400 mr-20"
-      href="#"
+      href="mailto:magdalena.jakonska@gmail.com"
       >Contact</a
     >
   </nav>
@@ -149,14 +162,14 @@
             <a
               class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-50 hover:text-orange-400 rounded"
               href="#"
-              >Home</a
+              >About</a
             >
           </li>
           <li class="mb-1">
             <a
               class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-orange-400 rounded"
               href="#"
-              >About</a
+              >Portfolio</a
             >
           </li>
           <li class="mb-1">
@@ -179,7 +192,7 @@
         <div class="pt-6">
           <a
             class="block px-4 py-3 mb-2 leading-loose text-md text-center text-white font-semibold bg-gradient-to-tr from-[#FF8660] to-[#8000FF] rounded-xl"
-            href="#"
+            href="mailto:magdalena.jakonska@gmail.com"
             >Contact</a
           >
         </div>
@@ -221,17 +234,22 @@
           with coding by applying to The Developer Academy boorcamp programme!
         </p>
         <div class="text-center">
-          <button
-            class="text-gray-800 inline-block px-[30px] py-[16px] mr-[18px] bg-white rounded-full font-semibold text-[22px] sm: mb-4"
+          <a href="mailto:magdalena.jakonska@gmail.com"
+            ><button
+              class="text-gray-800 inline-block px-[30px] py-[16px] mr-[18px] bg-white rounded-full font-semibold text-[22px] sm: mb-4"
+            >
+              Get In Touch
+            </button></a
           >
-            Get In Touch
-          </button>
 
-          <button
-            class="text-white inline-block px-[30px] py-[16px] bg-transparent border-2 rounded-full font-semibold text-[22px] sm: mb-4"
+          <a
+            href="https://docs.google.com/document/d/1eDvhrYVc7df45cawfuSv9_4fVSZ4dh6i/edit?usp=drive_link&ouid=116790118457443268574&rtpof=true&sd=true"
+            ><button
+              class="text-white inline-block px-[30px] py-[16px] bg-transparent border-2 rounded-full font-semibold text-[22px] sm: mb-4"
+            >
+              Download CV
+            </button></a
           >
-            Download CV
-          </button>
         </div>
       </div>
     </div>
@@ -241,7 +259,10 @@
     <section id="about" class="sm:p-10 lg:p-20 bg-red-50">
       <div class="container mx-auto">
         <div class="sm:columns-2">
-          <img class="sm:w-[500px] mb-10 sm:mb-0" src="https://i.postimg.cc/J0C1NLPn/bg-cta.jpg" />
+          <img
+            class="sm:w-[500px] mb-10 sm:mb-0"
+            src="https://i.postimg.cc/J0C1NLPn/bg-cta.jpg"
+          />
           <div>
             <h2 class="text-bold text-2xl mb-3"></h2>
             <p class="mb-5 text-lg font-bold text-black text-center">About</p>
@@ -262,7 +283,129 @@
       </div>
     </section>
 
-    <!-- services -->
+    <!-- portfolio -->
+    <section class="lg:p-20 p-5" id="portfolio">
+      <div class="lg:container mx-auto">
+        <h2 class="text-center text-4xl font-bold">Portfolio</h2>
+        <p class="text-center text-lg pb-10">Click on the card to see the demo of each project!</p>
+        <div class="lg:columns-4 sm:columns-2">
+          <a href="https://magda-j.github.io/Hobby-Site/"
+            ><div
+              class="p-5 bg-red-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md"
+            >
+              <h3 class="text-xl mb-5 font-bold">My Hobby Website</h3>
+              <img
+                class="rounded-md h-48 max-h-48 w-full"
+                src="https://i.postimg.cc/yY1ppGJr/hobby-web.png"
+              />
+              <a href="https://github.com/Magda-J/Hobby-Site"
+                ><p class="mt-2 hover:text-orange-400">
+                  Click here to open repository!
+                </p></a
+              >
+              <p class="p-4">#Tailwind #HTML</p>
+            </div></a
+          >
+          <!-- To be filled when more projects -->
+          <!-- <div
+            class="p-5 bg-red-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md"
+          >
+            <h3 class="text-xl mb-5">TO DO</h3>
+            <img
+              class="rounded-md h-48 max-h-48 w-full"
+              src="https://i.postimg.cc/FHCNPcDw/bg-hero.jpg"
+            />
+          </div> -->
+
+          <a href="https://magda-j.github.io/Quiz/"
+            ><div
+              class="p-5 bg-red-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md"
+            >
+              <h3 class="text-xl mb-5 font-bold">Quiz</h3>
+              <img
+                class="rounded-md h-48 max-h-48 w-full"
+                src="https://i.postimg.cc/9FxC4qR8/quiz.png"
+              />
+              <a href="https://github.com/Magda-J/Quiz"
+                ><p class="mt-2 hover:text-orange-400">
+                  Click here to open repository!
+                </p></a
+              >
+              <p class="p-4">#Tailwind #HTML</p>
+            </div></a
+          >
+          <!-- To be filled when more projects -->
+          <!-- <div
+            class="p-5 bg-red-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md"
+          >
+            <h3 class="text-xl mb-5">TO DO</h3>
+            <img
+              class="rounded-md h-48 max-h-48 w-full"
+              src="https://i.postimg.cc/FHCNPcDw/bg-hero.jpg"
+            />
+          </div> -->
+
+          <a href="https://magda-j.github.io/MyGame/"
+            ><div
+              class="p-5 bg-red-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md"
+            >
+              <h3 class="text-xl mb-5 font-bold">OOP Game</h3>
+              <img
+                class="rounded-md h-48 max-h-48 w-full"
+                src="https://i.postimg.cc/1RwK5pTS/game.png"
+              />
+              <a href="https://github.com/Magda-J/MyGame"
+                ><p class="mt-2 hover:text-orange-400">
+                  Click here to open repository!
+                </p></a
+              >
+              <p class="p-4">#Tailwind #HTML #Java Script #OOP</p>
+            </div></a
+          >
+          <!-- To be filled when more projects -->
+          <!-- <div
+            class="p-5 bg-red-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md"
+          >
+            <h3 class="text-xl mb-5">TO DO</h3>
+            <img
+              class="rounded-md h-48 max-h-48 w-full"
+              src="https://i.postimg.cc/FHCNPcDw/bg-hero.jpg"
+            />
+          </div> -->
+
+          <a href="https://magda-j.github.io/Ceaser-Cipher-Encoder-Decoder/"
+            ><div
+              class="p-5 bg-red-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md"
+            >
+              <h3 class="text-xl mb-5 font-bold">Caesar Cipher</h3>
+              <img
+                class="rounded-md h-48 max-h-48 w-full"
+                src="https://i.postimg.cc/sfbDKWDM/cipher.png"
+              />
+              <a href="https://github.com/Magda-J/Ceaser-Cipher-Encoder-Decoder"
+                ><p class="mt-2 hover:text-orange-400">
+                  Click here to open repository!
+                </p></a
+              >
+
+              <p class="p-4">#Tailwind #HTML #Java Script #Jest</p>
+            </div></a
+          >
+          <!-- To be filled when more projects -->
+          <!-- <div
+            class="p-5 bg-red-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md"
+          >
+            <h3 class="text-xl mb-5">Feedback</h3>
+            <img
+              class="rounded-md h-48 max-h-48 w-full"
+              src="https://i.postimg.cc/FHCNPcDw/bg-hero.jpg"
+            />
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
     <section id="services" class="sm:p-10 lg:p-20 p-5">
       <div class="sm:container mx-auto">
         <h2 class="text-center text-4xl font-bold pt-10 sm:pt-0 pb-10">
@@ -272,161 +415,109 @@
           <div
             class="sm:p-10 p-5 bg-red-50 sm:me-5 mb-10 rounded-md hover:shadow-md"
           >
-            <h3 class="text-xl mb-5 font-bold">Web Design</h3>
+            <h3 class="text-xl mb-5 font-bold">Hobby Website</h3>
             <p class="leading-10 text-gray-700 text-justify">
-              Welcome to my web developer portfolio! I am a passionate and
-              skilled web developer dedicated to creating engaging and
-              functional websites. With a strong foundation in front-end and
-              back-end technologies, I bring creativity and technical expertise
-              to every project. In the realm of front-end development, I
-              specialize in crafting responsive and user-friendly interfaces.
-              Proficient in HTML, CSS, and JavaScript, I ensure seamless
-              navigation and a visually appealing user experience. My designs
-              prioritize both aesthetics and accessibility, creating websites
-              that captivate audiences across devices.
+              <!-- Crafting my personal Hobby Website has been a rewarding venture, using
+              HTML, CSS, and Tailwind for efficiency. The Home page introduces
+              my identity, while a minimum of three additional pages offer a
+              seamless user experience. Each page embodies a cohesive design,
+              blending skills and aesthetics. Tailwind styling and layout
+              techniques maintain organized code. Images, paired with
+              appropriate alt text, enhance visual appeal and accessibility.
+              This condensed portfolio is not just digital; it's a succinct
+              reflection of my journey and capabilities, presenting a genuine
+              snapshot of my professional and personal identity. -->
+              Crafting my hobby website has been a fulfilling journey, employing
+              HTML, CSS, and Tailwind for efficiency. The Home page introduces
+              my passion, while a minimum of three additional pages ensures a
+              seamless user experience. Each page encapsulates a cohesive
+              design, harmonizing skills and aesthetics. Tailwind styling
+              maintains organized code, and images with alt text enhance
+              accessibility. This condensed hobby website serves as a genuine
+              snapshot, digitally encapsulating my journey, skills, and identity
+              in the realm of personal interests.
             </p>
           </div>
 
           <div
             class="sm:p-10 p-5 bg-red-50 sm:me-5 mb-10 rounded-md hover:shadow-md"
           >
-            <h3 class="text-xl mb-5 font-bold">Web Development</h3>
+            <h3 class="text-xl mb-5 font-bold">Quiz</h3>
             <p class="leading-10 text-gray-700 text-justify">
-              Welcome to my web developer portfolio! I am a passionate and
-              skilled web developer dedicated to creating engaging and
-              functional websites. With a strong foundation in front-end and
-              back-end technologies, I bring creativity and technical expertise
-              to every project. In the realm of front-end development, I
-              specialize in crafting responsive and user-friendly interfaces.
-              Proficient in HTML, CSS, and JavaScript, I ensure seamless
-              navigation and a visually appealing user experience. My designs
-              prioritize both aesthetics and accessibility, creating websites
-              that captivate audiences across devices.
+              <!-- I designed and implemented a dynamic quiz using HTML, CSS, and
+              JavaScript, showcasing my proficiency in web development. The
+              quiz, housed within a single HTML page, features a responsive
+              layout crafted with Tailwind for a clean and user-friendly design.
+              Employing Tailwind classes, I ensured organized styling, while
+              integrating JavaScript functions facilitated real-time processing
+              of user responses, leading to a comprehensive result display at
+              the quiz's conclusion. With a minimum of 5 multiple-choice
+              questions, dynamic question handling, and a concealed result
+              display until the end, the project demonstrates my ability to
+              create engaging web applications while adhering to best practices,
+              including the reuse of functions for code efficiency. -->
+              I crafted a dynamic quiz using HTML, CSS, and JavaScript, housed
+              in a single HTML page with a Tailwind-designed responsive layout.
+              Employing Tailwind classes, I ensured organized styling and
+              integrated JavaScript functions for real-time user response
+              processing, concluding with a comprehensive result display. The
+              project highlights my ability to create engaging web applications
+              and adhere to best practices, including code efficiency through
+              function reuse.
             </p>
           </div>
 
           <div
             class="sm:p-10 p-5 bg-red-50 sm:me-5 mb-10 rounded-md hover:shadow-md"
           >
-            <h3 class="text-xl mb-5 font-bold">Issue Fixing</h3>
+            <h3 class="text-xl mb-5 font-bold">OOP Game</h3>
             <p class="leading-10 text-gray-700 text-justify">
-              Welcome to my web developer portfolio! I am a passionate and
-              skilled web developer dedicated to creating engaging and
-              functional websites. With a strong foundation in front-end and
-              back-end technologies, I bring creativity and technical expertise
-              to every project. In the realm of front-end development, I
-              specialize in crafting responsive and user-friendly interfaces.
-              Proficient in HTML, CSS, and JavaScript, I ensure seamless
-              navigation and a visually appealing user experience. My designs
-              prioritize both aesthetics and accessibility, creating websites
-              that captivate audiences across devices.
+              <!-- I successfully executed an Object-Oriented Programming (OOP)
+              text-based adventure game in JavaScript, demonstrating my advanced
+              coding skills. Constructed within a single HTML page for seamless
+              user interaction, the game features dynamic movement between
+              distinct "rooms." Each room provides immersive descriptions of the
+              environment, objects, and characters present. Leveraging OOP
+              techniques, I implemented intricate interactions, allowing players
+              to engage with characters, solve puzzles, and collect objects. The
+              game's complexity extends to win or lose conditions triggered by
+              specific interactions, showcasing my ability to create compelling
+              and dynamic narratives through OOP principles. Additionally, the
+              project received extra accolades for its creative subject and
+              presentation. -->
+              I developed a JavaScript-based OOP text adventure game, showcasing
+              advanced coding skills. Designed within a single HTML page, the
+              game features dynamic room navigation, immersive descriptions, and
+              intricate interactions. Leveraging OOP principles, the project
+              highlights my ability to create engaging narratives with win/lose
+              conditions, earning extra accolades for creativity and
+              presentation.
             </p>
           </div>
 
           <div
             class="sm:p-10 p-5 bg-red-50 sm:me-5 mb-10 rounded-md hover:shadow-md"
           >
-            <h3 class="text-xl mb-5 font-bold">Issue Fixing</h3>
+            <h3 class="text-xl mb-5 font-bold">Caesar Cipher</h3>
             <p class="leading-10 text-gray-700 text-justify">
-              Welcome to my web developer portfolio! I am a passionate and
-              skilled web developer dedicated to creating engaging and
-              functional websites. With a strong foundation in front-end and
-              back-end technologies, I bring creativity and technical expertise
-              to every project. In the realm of front-end development, I
-              specialize in crafting responsive and user-friendly interfaces.
-              Proficient in HTML, CSS, and JavaScript, I ensure seamless
-              navigation and a visually appealing user experience. My designs
-              prioritize both aesthetics and accessibility, creating websites
-              that captivate audiences across devices.
+              <!-- I spearheaded the development of a collaborative JavaScript
+              project, creating a robust encoding/decoding web app utilizing the
+              Caesar cipher with an HTML user interface. The app seamlessly
+              accepts user input for plain text or coded messages, along with
+              the required key and the choice of encoding or decoding.
+              Leveraging JavaScript, the app dynamically produces decoded plain
+              text or coded messages based on user preferences, offering a
+              user-friendly and efficient tool for cryptographic operations.
+              This project not only showcased my technical prowess in JavaScript
+              but also highlighted my ability to collaborate within a group to
+              deliver a functional and user-centric web application. -->
+              I led the creation of a collaborative JavaScript project,
+              developing a robust Caesar cipher encoding/decoding web app with
+              an HTML interface. The app efficiently processes user input,
+              dynamically producing decoded text or coded messages. This project
+              underscores my technical expertise in JavaScript and collaborative
+              abilities, delivering a user-centric web application.
             </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- portfolio -->
-    <section class="lg:p-20 p-5" id="portfolio">
-      <div class="lg:container mx-auto">
-        <h2 class="text-center text-4xl font-bold pb-10">Portfolio</h2>
-        <div class="lg:columns-4 sm:columns-2">
-          <div
-            class="p-5 bg-red-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md"
-          >
-            <h3 class="text-xl mb-5">TO DO</h3>
-            <img
-              class="rounded-md h-48 max-h-48 w-full"
-              src="https://i.postimg.cc/FHCNPcDw/bg-hero.jpg"
-            />
-          </div>
-
-          <div
-            class="p-5 bg-red-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md"
-          >
-            <h3 class="text-xl mb-5">TO DO</h3>
-            <img
-              class="rounded-md h-48 max-h-48 w-full"
-              src="https://i.postimg.cc/FHCNPcDw/bg-hero.jpg"
-            />
-          </div>
-
-          <div
-            class="p-5 bg-red-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md"
-          >
-            <h3 class="text-xl mb-5">TO DO</h3>
-            <img
-              class="rounded-md h-48 max-h-48 w-full"
-              src="https://i.postimg.cc/FHCNPcDw/bg-hero.jpg"
-            />
-          </div>
-
-          <div
-            class="p-5 bg-red-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md"
-          >
-            <h3 class="text-xl mb-5">TO DO</h3>
-            <img
-              class="rounded-md h-48 max-h-48 w-full"
-              src="https://i.postimg.cc/FHCNPcDw/bg-hero.jpg"
-            />
-          </div>
-
-          <div
-            class="p-5 bg-red-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md"
-          >
-            <h3 class="text-xl mb-5">TO DO</h3>
-            <img
-              class="rounded-md h-48 max-h-48 w-full"
-              src="https://i.postimg.cc/FHCNPcDw/bg-hero.jpg"
-            />
-          </div>
-
-          <div
-            class="p-5 bg-red-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md"
-          >
-            <h3 class="text-xl mb-5">TO DO</h3>
-            <img
-              class="rounded-md h-48 max-h-48 w-full"
-              src="https://i.postimg.cc/FHCNPcDw/bg-hero.jpg"
-            />
-          </div>
-
-          <div
-            class="p-5 bg-red-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md"
-          >
-            <h3 class="text-xl mb-5">TO DO</h3>
-            <img
-              class="rounded-md h-48 max-h-48 w-full"
-              src="https://i.postimg.cc/FHCNPcDw/bg-hero.jpg"
-            />
-          </div>
-
-          <div
-            class="p-5 bg-red-50 sm:me-5 sm:mb-10 mb-5 rounded-md hover:shadow-md"
-          >
-            <h3 class="text-xl mb-5">Feedback</h3>
-            <img
-              class="rounded-md h-48 max-h-48 w-full"
-              src="https://i.postimg.cc/FHCNPcDw/bg-hero.jpg"
-            />
           </div>
         </div>
       </div>
@@ -551,86 +642,90 @@
           <div class="mt-10 sm:mt-0">
             <h3 class="text-xl font-bold text-white mb-2">Quick links</h3>
             <!-- Github -->
-            <button
-              type="button"
-              data-te-ripple-init
-              data-te-ripple-color="light"
-              class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
-              style="background-color: #333"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4"
-                fill="currentColor"
-                viewBox="0 0 24 24"
+            <a href="https://github.com/Magda-J"
+              ><button
+                type="button"
+                data-te-ripple-init
+                data-te-ripple-color="light"
+                class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                style="background-color: #333"
               >
-                <path
-                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                />
-              </svg>
-            </button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
+                </svg></button
+            ></a>
 
             <!-- Google -->
-            <button
-              type="button"
-              data-te-ripple-init
-              data-te-ripple-color="light"
-              class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
-              style="background-color: #ea4335"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4"
-                fill="currentColor"
-                viewBox="0 0 24 24"
+            <a href="mailto:magdalena.jakonska@gmail.com"
+              ><button
+                type="button"
+                data-te-ripple-init
+                data-te-ripple-color="light"
+                class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                style="background-color: #ea4335"
               >
-                <path
-                  d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                  />
+                </svg></button
+            ></a>
 
             <!-- Linkedin -->
-            <button
-              type="button"
-              data-te-ripple-init
-              data-te-ripple-color="light"
-              class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
-              style="background-color: #0077b5"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4"
-                fill="currentColor"
-                viewBox="0 0 24 24"
+            <a href="https://www.linkedin.com/in/magdalena-jakonska/"
+              ><button
+                type="button"
+                data-te-ripple-init
+                data-te-ripple-color="light"
+                class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                style="background-color: #0077b5"
               >
-                <path
-                  d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
-                />
-              </svg>
-            </button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                  />
+                </svg></button
+            ></a>
 
             <!-- Whatsapp -->
-            <button
-              type="button"
-              data-te-ripple-init
-              data-te-ripple-color="light"
-              class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
-              style="background-color: #128c7e"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4"
-                fill="currentColor"
-                viewBox="0 0 24 24"
+            <a href="https:wa.me/">
+              <button
+                type="button"
+                data-te-ripple-init
+                data-te-ripple-color="light"
+                class="mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                style="background-color: #128c7e"
               >
-                <path
-                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
-                />
-              </svg>
-            </button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                  />
+                </svg></button
+            ></a>
           </div>
         </div>
       </section>
